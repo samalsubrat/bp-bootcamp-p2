@@ -1,0 +1,24 @@
+{
+  "id": "R05B",
+  "description": "Events after completion are rejected",
+  "range": "reference",
+  "state": {
+    "ammunition": 0,
+    "score": 1,
+    "shots": 2,
+    "status": "complete"
+  },
+  "event": {
+    "type": "hit"
+  },
+  "expected": {
+    "accepted": false,
+    "reason": "GAME_COMPLETE",
+    "state": {
+      "ammunition": 0,
+      "score": 1,
+      "shots": 2,
+      "status": "complete"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "R05A",
+  "description": "An unknown event is rejected and state is unchanged",
+  "range": "reference",
+  "state": {
+    "ammunition": 2,
+    "score": 0,
+    "shots": 0,
+    "status": "active"
+  },
+  "event": {
+    "type": "reload"
+  },
+  "expected": {
+    "accepted": false,
+    "reason": "INVALID_EVENT",
+    "state": {
+      "ammunition": 2,
+      "score": 0,
+      "shots": 0,
+      "status": "active"
+    }
+  }
+}

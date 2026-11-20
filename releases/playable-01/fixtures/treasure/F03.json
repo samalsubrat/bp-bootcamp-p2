@@ -1,0 +1,33 @@
+{
+  "id": "F03",
+  "description": "Moving into the wall is rejected and state is unchanged",
+  "board": "reference",
+  "state": {
+    "position": {
+      "x": 1,
+      "y": 0
+    },
+    "movesRemaining": 5,
+    "score": 0,
+    "collected": [],
+    "status": "playing"
+  },
+  "action": {
+    "type": "move",
+    "direction": "south"
+  },
+  "expected": {
+    "accepted": false,
+    "reason": "WALL",
+    "state": {
+      "position": {
+        "x": 1,
+        "y": 0
+      },
+      "movesRemaining": 5,
+      "score": 0,
+      "collected": [],
+      "status": "playing"
+    }
+  }
+}

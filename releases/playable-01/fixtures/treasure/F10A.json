@@ -1,0 +1,33 @@
+{
+  "id": "F10A",
+  "description": "An unknown direction is rejected as invalid",
+  "board": "reference",
+  "state": {
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "movesRemaining": 6,
+    "score": 0,
+    "collected": [],
+    "status": "playing"
+  },
+  "action": {
+    "type": "move",
+    "direction": "up"
+  },
+  "expected": {
+    "accepted": false,
+    "reason": "INVALID_ACTION",
+    "state": {
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "movesRemaining": 6,
+      "score": 0,
+      "collected": [],
+      "status": "playing"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "F01",
+  "description": "Start: initial state from the reference board",
+  "board": "reference",
+  "state": null,
+  "action": null,
+  "expected": {
+    "accepted": null,
+    "reason": null,
+    "state": {
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "movesRemaining": 6,
+      "score": 0,
+      "collected": [],
+      "status": "playing"
+    }
+  }
+}

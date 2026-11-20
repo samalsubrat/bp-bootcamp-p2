@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- SUPPLIED page. Your code reaches it only through connect, paint, text, playable and identify. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Playable TypeScript game</title>
+    <link rel="stylesheet" href="site.css">
+    <script type="module" src="dist/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Playable TypeScript game</h1>
+      <p class="run">Run ID: <code id="run-id">not started</code>
+        &middot; <a id="event-link" href="events.html">Local event view</a></p>
+    </header>
+    <main>
+      <section aria-labelledby="data-heading">
+        <h2 id="data-heading">Game data</h2>
+        <p id="api" class="message" role="status" aria-live="polite">Not requested yet</p>
+        <button id="reload" type="button">Reload game data</button>
+      </section>
+
+      <section aria-labelledby="game-heading">
+        <h2 id="game-heading">Game</h2>
+        <p id="status" class="message" role="status" aria-live="polite">Loading the page...</p>
+        <div class="lifecycle">
+          <button id="start" type="button">Start game</button>
+          <button id="restart" type="button">Restart</button>
+        </div>
+        <div id="actions" class="actions" role="group" aria-label="Game actions"></div>
+        <p id="result" class="message" aria-live="polite">No action yet</p>
+      </section>
+
+      <section aria-labelledby="state-heading">
+        <h2 id="state-heading">State</h2>
+        <dl id="state" class="state"></dl>
+      </section>
+
+      <section aria-labelledby="telemetry-heading">
+        <h2 id="telemetry-heading">Local recording</h2>
+        <p id="telemetry" class="message" aria-live="polite">No event recorded yet</p>
+      </section>
+    </main>
+  </body>
+</html>

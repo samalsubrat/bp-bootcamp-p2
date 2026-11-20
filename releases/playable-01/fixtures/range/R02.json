@@ -1,0 +1,24 @@
+{
+  "id": "R02",
+  "description": "A hit consumes one round and scores one",
+  "range": "reference",
+  "state": {
+    "ammunition": 2,
+    "score": 0,
+    "shots": 0,
+    "status": "active"
+  },
+  "event": {
+    "type": "hit"
+  },
+  "expected": {
+    "accepted": true,
+    "reason": null,
+    "state": {
+      "ammunition": 1,
+      "score": 1,
+      "shots": 1,
+      "status": "active"
+    }
+  }
+}

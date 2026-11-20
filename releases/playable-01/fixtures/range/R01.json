@@ -1,0 +1,17 @@
+{
+  "id": "R01",
+  "description": "Start: two rounds, no score",
+  "range": "reference",
+  "state": null,
+  "event": null,
+  "expected": {
+    "accepted": null,
+    "reason": null,
+    "state": {
+      "ammunition": 2,
+      "score": 0,
+      "shots": 0,
+      "status": "active"
+    }
+  }
+}

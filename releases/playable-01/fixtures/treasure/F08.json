@@ -1,0 +1,33 @@
+{
+  "id": "F08",
+  "description": "Spending the last move without winning loses",
+  "board": "reference",
+  "state": {
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "movesRemaining": 1,
+    "score": 0,
+    "collected": [],
+    "status": "playing"
+  },
+  "action": {
+    "type": "move",
+    "direction": "east"
+  },
+  "expected": {
+    "accepted": true,
+    "reason": null,
+    "state": {
+      "position": {
+        "x": 1,
+        "y": 0
+      },
+      "movesRemaining": 0,
+      "score": 0,
+      "collected": [],
+      "status": "lost"
+    }
+  }
+}

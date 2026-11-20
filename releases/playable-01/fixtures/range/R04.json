@@ -1,0 +1,24 @@
+{
+  "id": "R04",
+  "description": "Using the last round completes the range",
+  "range": "reference",
+  "state": {
+    "ammunition": 1,
+    "score": 1,
+    "shots": 1,
+    "status": "active"
+  },
+  "event": {
+    "type": "hit"
+  },
+  "expected": {
+    "accepted": true,
+    "reason": null,
+    "state": {
+      "ammunition": 0,
+      "score": 2,
+      "shots": 2,
+      "status": "complete"
+    }
+  }
+}

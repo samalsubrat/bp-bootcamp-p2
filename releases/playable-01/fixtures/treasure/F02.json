@@ -1,0 +1,33 @@
+{
+  "id": "F02",
+  "description": "East from the start is accepted and costs one move",
+  "board": "reference",
+  "state": {
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "movesRemaining": 6,
+    "score": 0,
+    "collected": [],
+    "status": "playing"
+  },
+  "action": {
+    "type": "move",
+    "direction": "east"
+  },
+  "expected": {
+    "accepted": true,
+    "reason": null,
+    "state": {
+      "position": {
+        "x": 1,
+        "y": 0
+      },
+      "movesRemaining": 5,
+      "score": 0,
+      "collected": [],
+      "status": "playing"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "F04",
+  "description": "Moving off the board edge is rejected and state is unchanged",
+  "board": "reference",
+  "state": {
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "movesRemaining": 6,
+    "score": 0,
+    "collected": [],
+    "status": "playing"
+  },
+  "action": {
+    "type": "move",
+    "direction": "north"
+  },
+  "expected": {
+    "accepted": false,
+    "reason": "EDGE",
+    "state": {
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "movesRemaining": 6,
+      "score": 0,
+      "collected": [],
+      "status": "playing"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "R03",
+  "description": "A miss consumes one round without score",
+  "range": "reference",
+  "state": {
+    "ammunition": 2,
+    "score": 0,
+    "shots": 0,
+    "status": "active"
+  },
+  "event": {
+    "type": "miss"
+  },
+  "expected": {
+    "accepted": true,
+    "reason": null,
+    "state": {
+      "ammunition": 1,
+      "score": 0,
+      "shots": 1,
+      "status": "active"
+    }
+  }
+}

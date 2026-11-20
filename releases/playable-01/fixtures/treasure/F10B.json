@@ -1,0 +1,32 @@
+{
+  "id": "F10B",
+  "description": "A missing direction is rejected as invalid",
+  "board": "reference",
+  "state": {
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "movesRemaining": 6,
+    "score": 0,
+    "collected": [],
+    "status": "playing"
+  },
+  "action": {
+    "type": "move"
+  },
+  "expected": {
+    "accepted": false,
+    "reason": "INVALID_ACTION",
+    "state": {
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "movesRemaining": 6,
+      "score": 0,
+      "collected": [],
+      "status": "playing"
+    }
+  }
+}

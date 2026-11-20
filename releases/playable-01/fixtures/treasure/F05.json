@@ -1,0 +1,35 @@
+{
+  "id": "F05",
+  "description": "Reaching the treasure scores ten and records it once",
+  "board": "reference",
+  "state": {
+    "position": {
+      "x": 1,
+      "y": 0
+    },
+    "movesRemaining": 5,
+    "score": 0,
+    "collected": [],
+    "status": "playing"
+  },
+  "action": {
+    "type": "move",
+    "direction": "east"
+  },
+  "expected": {
+    "accepted": true,
+    "reason": null,
+    "state": {
+      "position": {
+        "x": 2,
+        "y": 0
+      },
+      "movesRemaining": 4,
+      "score": 10,
+      "collected": [
+        "t1"
+      ],
+      "status": "playing"
+    }
+  }
+}
