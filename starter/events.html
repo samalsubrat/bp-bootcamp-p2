@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- SUPPLIED local event view: process-memory rows from this server only (not Grafana, not BP telemetry). -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local event view</title>
+    <link rel="stylesheet" href="site.css">
+    <script type="module" src="dist/supplied/event-view.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Local event view</h1>
+      <p>Rows live in the memory of the local server process and disappear when it stops.
+        <a href="index.html">Back to the game</a></p>
+    </header>
+    <main>
+      <form id="filter-form" class="filter">
+        <label for="run-filter">Run ID</label>
+        <input id="run-filter" name="runId" autocomplete="off" placeholder="run-xxxxxxxx">
+        <button type="submit">Filter</button>
+        <button id="refresh" type="button">Refresh</button>
+      </form>
+      <p id="summary" class="message" role="status" aria-live="polite">Not loaded yet</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Received</th><th scope="col">Run ID</th><th scope="col">Sequence</th>
+              <th scope="col">Action</th><th scope="col">Result</th><th scope="col">Before</th><th scope="col">After</th></tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

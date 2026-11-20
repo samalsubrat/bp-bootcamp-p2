@@ -1,0 +1,22 @@
+{
+  "name": "p2-playable-typescript-game",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Project 2: playable TypeScript game (treasure hunt or target range) with local game-data API, event view and release tools.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check:boot": "npm run build && node tools/check-boot.mjs",
+    "check:rules": "npm run build && node --test tests/fixtures.test.mjs tests/learner.test.mjs",
+    "check:browser": "playwright test",
+    "start": "npm run build && node server/serve.mjs",
+    "test": "npm run check:rules && npm run check:browser"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.0",
+    "typescript": "5.9.3"
+  }
+}

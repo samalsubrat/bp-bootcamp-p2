@@ -1,0 +1,33 @@
+{
+  "id": "F09B",
+  "description": "Actions after a loss are rejected and state is unchanged",
+  "board": "reference",
+  "state": {
+    "position": {
+      "x": 1,
+      "y": 0
+    },
+    "movesRemaining": 0,
+    "score": 0,
+    "collected": [],
+    "status": "lost"
+  },
+  "action": {
+    "type": "move",
+    "direction": "east"
+  },
+  "expected": {
+    "accepted": false,
+    "reason": "GAME_COMPLETE",
+    "state": {
+      "position": {
+        "x": 1,
+        "y": 0
+      },
+      "movesRemaining": 0,
+      "score": 0,
+      "collected": [],
+      "status": "lost"
+    }
+  }
+}

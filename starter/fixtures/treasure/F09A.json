@@ -1,0 +1,37 @@
+{
+  "id": "F09A",
+  "description": "Actions after a win are rejected and state is unchanged",
+  "board": "reference",
+  "state": {
+    "position": {
+      "x": 2,
+      "y": 2
+    },
+    "movesRemaining": 2,
+    "score": 10,
+    "collected": [
+      "t1"
+    ],
+    "status": "won"
+  },
+  "action": {
+    "type": "move",
+    "direction": "west"
+  },
+  "expected": {
+    "accepted": false,
+    "reason": "GAME_COMPLETE",
+    "state": {
+      "position": {
+        "x": 2,
+        "y": 2
+      },
+      "movesRemaining": 2,
+      "score": 10,
+      "collected": [
+        "t1"
+      ],
+      "status": "won"
+    }
+  }
+}
